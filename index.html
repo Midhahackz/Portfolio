@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minecraft Cinematic Replays</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg,#041b16,#062e2b,#0b3d91);
+      min-height:100vh;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .hero{
+      text-align:center;
+      margin-top:50px;
+      margin-bottom:70px;
+    }
+
+    .hero h1{
+      font-size:55px;
+      font-weight:800;
+      background:linear-gradient(to right,#7fffd4,#7ec8ff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      color:#d7d7d7;
+      font-size:18px;
+      max-width:700px;
+      margin:auto;
+      line-height:1.6;
+    }
+
+    .video-section{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+      margin-bottom:80px;
+    }
+
+    .video-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:20px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      transition:0.3s ease;
+      cursor:pointer;
+    }
+
+    .video-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 30px rgba(0,255,170,0.25);
+    }
+
+    .video-card video{
+      width:100%;
+      display:block;
+    }
+
+    .video-info{
+      padding:20px;
+    }
+
+    .video-info h2{
+      margin-bottom:10px;
+      color:#7fffd4;
+    }
+
+    .video-info p{
+      color:#cfcfcf;
+      line-height:1.5;
+    }
+
+    .bottom-buttons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      padding-bottom:40px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      text-decoration:none;
+      color:white;
+      padding:14px 28px;
+      border-radius:12px;
+      background:linear-gradient(135deg,#00b894,#0984e3);
+      transition:0.3s ease;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      transform:scale(1.07);
+      box-shadow:0 0 20px rgba(0,255,200,0.4);
+    }
+
+    footer{
+      text-align:center;
+      color:#bfbfbf;
+      margin-top:30px;
+      margin-bottom:20px;
+      font-size:14px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <section class="hero">
+      <h1>Custom Minecraft Cinematic Replay Creator</h1>
+
+      <p>
+        High quality Minecraft cinematic replays, smooth camera movements,
+        dramatic scenes, PvP showcases, server trailers and custom edits
+        created for creators, servers and communities.
+      </p>
+    </section>
+
+    <section class="video-section">
+
+      <div class="video-card">
+        <video muted loop>
+          <source src="F:\Flashback_Scenes\Midha_Silent_Lifesteal_CLIP.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-info">
+          <h2>PvP Cinematic</h2>
+          <p>
+            Smooth replay shots with intense action scenes and dynamic camera movement.
+          </p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <video muted loop>
+          <source src="F:\Flashback_Scenes\Midha_Silent_Jump.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-info">
+          <h2>Server Trailer</h2>
+          <p>
+            Professional cinematic showcase for Minecraft servers and events.
+          </p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <video muted loop>
+          <source src="F:\Flashback_Scenes\VOIDSMP_3Features_Scene.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-info">
+          <h2>Build Showcase</h2>
+          <p>
+            Beautiful cinematic flythroughs for custom maps and giant builds.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="bottom-buttons">
+      <a href="https://discord.com" class="btn" target="_blank">
+        Join Discord
+      </a>
+
+      <a href="https://youtube.com" class="btn" target="_blank">
+        Watch on YouTube
+      </a>
+    </div>
+
+    <footer>
+      © 2026 Minecraft Cinematic Portfolio
+    </footer>
+
+  </div>
+
+  <script>
+    const videos = document.querySelectorAll("video");
+
+    videos.forEach(video => {
+
+      video.parentElement.addEventListener("mouseenter", () => {
+        video.play();
+      });
+
+      video.parentElement.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+
+    });
+  </script>
+
+</body>
+</html>
