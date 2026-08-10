@@ -1,0 +1,1734 @@
+/* =====================================================
+   MidFlow Portfolio
+   portfolio.css
+   Part 1
+===================================================== */
+
+
+/* =====================================================
+   Portfolio Hero
+===================================================== */
+
+.portfolio-hero{
+
+    width:min(1000px,92%);
+
+    margin:0 auto;
+
+    padding-top:190px;
+
+    padding-bottom:90px;
+
+    text-align:center;
+
+}
+
+
+/* Small badge */
+
+.portfolio-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:9px 17px;
+
+    margin-bottom:24px;
+
+    border-radius:50px;
+
+    color:var(--green);
+
+    background:
+        rgba(34,197,94,.09);
+
+    border:
+        1px solid rgba(34,197,94,.18);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:.02em;
+
+}
+
+
+/* Main heading */
+
+.portfolio-hero h1{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(3rem,6vw,5rem);
+
+    line-height:1.05;
+
+    letter-spacing:-.04em;
+
+    margin-bottom:25px;
+
+}
+
+
+/* Gradient heading */
+
+.portfolio-hero h1 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+/* Description */
+
+.portfolio-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   Portfolio Main Section
+===================================================== */
+
+.portfolio-section{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+}
+
+
+/* =====================================================
+   Filter Bar
+===================================================== */
+
+.portfolio-filters{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:55px;
+
+}
+
+
+/* Filter button */
+
+.filter-btn{
+
+    border:1px solid
+        rgba(255,255,255,.08);
+
+    background:
+        rgba(255,255,255,.035);
+
+    color:#94a3b8;
+
+    padding:
+        11px 20px;
+
+    border-radius:50px;
+
+    font-family:"Inter";
+
+    font-size:.88rem;
+
+    cursor:pointer;
+
+    transition:
+        color .3s ease,
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+
+}
+
+
+/* Hover */
+
+.filter-btn:hover{
+
+    color:white;
+
+    border-color:
+        rgba(34,197,94,.25);
+
+    background:
+        rgba(34,197,94,.06);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* Active */
+
+.filter-btn.active{
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(34,197,94,.9),
+            rgba(20,184,166,.9)
+        );
+
+    border-color:
+        transparent;
+
+    box-shadow:
+        0 8px 25px
+        rgba(34,197,94,.18);
+
+}
+
+
+/* =====================================================
+   Featured Project
+===================================================== */
+
+.featured-project{
+
+    display:grid;
+
+    grid-template-columns:
+        1.45fr .75fr;
+
+    gap:45px;
+
+    align-items:center;
+
+    padding:25px;
+
+    margin-bottom:70px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.015)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    box-shadow:
+        0 30px 70px
+        rgba(0,0,0,.3);
+
+    overflow:hidden;
+
+}
+
+
+/* Featured image */
+
+.featured-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    aspect-ratio:16 / 9;
+
+    background:#08111d;
+
+}
+
+
+/* Image */
+
+.featured-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .7s
+        cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+/* Image hover */
+
+.featured-project:hover
+.featured-image img{
+
+    transform:
+        scale(1.035);
+
+}
+
+
+/* Green glow */
+
+.featured-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(34,197,94,.16),
+            transparent 40%
+        );
+
+}
+
+
+/* Featured content */
+
+.featured-content{
+
+    padding:
+        20px 15px;
+
+}
+
+
+/* Label */
+
+.featured-content > span{
+
+    color:var(--green);
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+/* Heading */
+
+.featured-content h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:2.5rem;
+
+    line-height:1.1;
+
+    margin:
+        14px 0 18px;
+
+}
+
+
+/* Paragraph */
+
+.featured-content p{
+
+    color:var(--gray);
+
+    line-height:1.75;
+
+    font-size:.94rem;
+
+    margin-bottom:27px;
+
+}
+
+
+/* Project link */
+
+.project-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#e2e8f0;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    transition:
+        color .3s ease,
+        gap .3s ease;
+
+}
+
+.project-link:hover{
+
+    color:var(--green);
+
+    gap:15px;
+
+}
+
+
+/* =====================================================
+   Portfolio Grid
+===================================================== */
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+/* =====================================================
+   Portfolio Item
+===================================================== */
+
+.portfolio-item{
+
+    position:relative;
+
+    min-width:0;
+
+}
+
+
+/* Large project */
+
+.portfolio-item.large{
+
+    grid-column:
+        span 2;
+
+}
+
+
+/* =====================================================
+   Portfolio Image
+===================================================== */
+
+.portfolio-image{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:16 / 9;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:#08111d;
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.25);
+
+}
+
+
+/* Image */
+
+.portfolio-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .65s
+        cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+/* Hover image */
+
+.portfolio-item:hover
+.portfolio-image img{
+
+    transform:
+        scale(1.045);
+
+}
+
+
+/* =====================================================
+   Portfolio Overlay
+===================================================== */
+
+.portfolio-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    align-items:flex-start;
+
+    padding:28px;
+
+    opacity:0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(3,8,15,.92),
+            rgba(3,8,15,.25),
+            transparent
+        );
+
+    transition:
+        opacity .4s ease;
+
+}
+
+
+/* Show overlay */
+
+.portfolio-item:hover
+.portfolio-overlay{
+
+    opacity:1;
+
+}
+
+
+/* Category */
+
+.portfolio-overlay span{
+
+    color:
+        #86efac;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.1em;
+
+    margin-bottom:7px;
+
+}
+
+
+/* Project name */
+
+.portfolio-overlay h3{
+
+    font-family:"Space Grotesk";
+
+    font-size:1.35rem;
+
+}
+
+
+/* Expand button */
+
+.view-project{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:1px solid
+        rgba(255,255,255,.15);
+
+    border-radius:50%;
+
+    background:
+        rgba(5,11,20,.65);
+
+    backdrop-filter:
+        blur(10px);
+
+    color:white;
+
+    cursor:pointer;
+
+    transform:
+        translateY(-10px);
+
+    transition:
+        transform .4s ease,
+        background .3s ease,
+        border-color .3s ease;
+
+}
+
+
+/* Button hover */
+
+.portfolio-item:hover
+.view-project{
+
+    transform:
+        translateY(0);
+
+}
+
+
+.view-project:hover{
+
+    background:
+        var(--green);
+
+    border-color:
+        var(--green);
+
+}
+/* =====================================================
+   MidFlow Portfolio
+   portfolio.css
+   Part 2
+===================================================== */
+
+
+/* =====================================================
+   Portfolio Item Filtering
+===================================================== */
+
+.portfolio-item.is-hidden,
+.featured-project.is-hidden{
+
+    display:none;
+
+}
+
+
+/* =====================================================
+   Before / After Section
+===================================================== */
+
+.portfolio-before-after{
+
+    margin-top:140px;
+
+    padding-top:20px;
+
+}
+
+
+/* Heading container */
+
+.before-after-heading{
+
+    max-width:700px;
+
+    margin:
+        0 auto 45px;
+
+    text-align:center;
+
+}
+
+
+/* Small label */
+
+.before-after-heading > span{
+
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:var(--green);
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+/* Heading */
+
+.before-after-heading h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.4rem,5vw,3.5rem);
+
+    line-height:1.1;
+
+    margin-bottom:18px;
+
+}
+
+
+/* Gradient part */
+
+.before-after-heading h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+/* Description */
+
+.before-after-heading p{
+
+    color:var(--gray);
+
+    line-height:1.75;
+
+    font-size:.95rem;
+
+}
+
+
+/* =====================================================
+   Comparison Container
+===================================================== */
+
+.portfolio-comparison{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:1000px;
+
+    aspect-ratio:16 / 9;
+
+    margin:auto;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:#08111d;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    box-shadow:
+        0 35px 90px
+        rgba(0,0,0,.45);
+
+    user-select:none;
+
+}
+
+
+/* Base image */
+
+.portfolio-comparison > img{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+/* After image wrapper */
+
+.after-image{
+
+    position:absolute;
+
+    inset:0;
+
+    width:50%;
+
+    overflow:hidden;
+
+    z-index:2;
+
+}
+
+
+/*
+   Important:
+   The image inside the wrapper must stay
+   the same width as the full comparison.
+*/
+
+.after-image img{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:1000px;
+
+    max-width:none;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+/* =====================================================
+   Comparison Divider
+===================================================== */
+
+.comparison-line{
+
+    position:absolute;
+
+    top:0;
+
+    bottom:0;
+
+    left:50%;
+
+    width:3px;
+
+    z-index:5;
+
+    transform:
+        translateX(-50%);
+
+    background:white;
+
+    box-shadow:
+        0 0 20px
+        rgba(255,255,255,.65);
+
+    pointer-events:none;
+
+}
+
+
+/* =====================================================
+   Comparison Handle
+===================================================== */
+
+.comparison-handle{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transform:
+        translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+        rgba(5,11,20,.85);
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    backdrop-filter:
+        blur(12px);
+
+    color:white;
+
+    box-shadow:
+        0 10px 35px
+        rgba(0,0,0,.5);
+
+}
+
+
+/* =====================================================
+   Comparison Labels
+===================================================== */
+
+.comparison-label{
+
+    position:absolute;
+
+    top:22px;
+
+    z-index:6;
+
+    padding:
+        7px 12px;
+
+    border-radius:7px;
+
+    background:
+        rgba(5,11,20,.7);
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    backdrop-filter:
+        blur(10px);
+
+    color:white;
+
+    font-size:.7rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+}
+
+
+.before-label{
+
+    left:22px;
+
+}
+
+
+.after-label{
+
+    right:22px;
+
+}
+
+
+/* =====================================================
+   Portfolio CTA
+===================================================== */
+
+.portfolio-cta{
+
+    position:relative;
+
+    margin-top:150px;
+
+    padding:
+        100px 40px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    background:
+
+        radial-gradient(
+            circle at 50% 120%,
+            rgba(34,197,94,.2),
+            transparent 55%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.015)
+        );
+
+}
+
+
+/* Decorative glow */
+
+.portfolio-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    left:50%;
+
+    top:-350px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(34,211,238,.18),
+            transparent 70%
+        );
+
+    filter:
+        blur(70px);
+
+    pointer-events:none;
+
+}
+
+
+/* Small label */
+
+.portfolio-cta > span{
+
+    position:relative;
+
+    z-index:2;
+
+    display:block;
+
+    margin-bottom:18px;
+
+    color:var(--green);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+/* CTA heading */
+
+.portfolio-cta h2{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:750px;
+
+    margin:
+        0 auto 20px;
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.4rem,5vw,3.7rem);
+
+    line-height:1.08;
+
+}
+
+
+/* Gradient CTA text */
+
+.portfolio-cta h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+/* CTA paragraph */
+
+.portfolio-cta p{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:550px;
+
+    margin:
+        0 auto 32px;
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+    font-size:.95rem;
+
+}
+
+
+/* CTA button */
+
+.portfolio-cta .primary{
+
+    position:relative;
+
+    z-index:2;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+/* =====================================================
+   Portfolio Page Entrance
+===================================================== */
+
+.portfolio-hero{
+
+    animation:
+        portfolioHeroIn 1s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+}
+
+
+@keyframes portfolioHeroIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(30px);
+
+        filter:
+            blur(6px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+        filter:
+            blur(0);
+
+    }
+
+}
+
+
+/* Filters */
+
+.portfolio-filters{
+
+    animation:
+        fadeFilters .8s ease both;
+
+    animation-delay:.15s;
+
+}
+
+
+@keyframes fadeFilters{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* Featured project */
+
+.featured-project{
+
+    animation:
+        featuredIn 1s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+    animation-delay:.25s;
+
+}
+
+
+@keyframes featuredIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(35px)
+            scale(.98);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+   Portfolio Hover Glow
+===================================================== */
+
+.portfolio-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    top:-100px;
+
+    right:-80px;
+
+    z-index:1;
+
+    border-radius:50%;
+
+    background:
+        rgba(34,197,94,.2);
+
+    filter:
+        blur(60px);
+
+    opacity:0;
+
+    transition:
+        opacity .5s ease;
+
+    pointer-events:none;
+
+}
+
+
+.portfolio-item:hover
+.portfolio-image::before{
+
+    opacity:1;
+
+}
+
+
+/* =====================================================
+   Tablet
+===================================================== */
+
+@media (max-width:850px){
+
+    .portfolio-hero{
+
+        padding-top:160px;
+
+        padding-bottom:70px;
+
+    }
+
+
+    .featured-project{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        padding:18px;
+
+    }
+
+
+    .featured-content{
+
+        padding:
+            10px 8px 15px;
+
+    }
+
+
+    .featured-content h2{
+
+        font-size:2.1rem;
+
+    }
+
+
+    .portfolio-grid{
+
+        gap:15px;
+
+    }
+
+
+    .portfolio-overlay{
+
+        opacity:1;
+
+        padding:20px;
+
+    }
+
+
+    .portfolio-overlay h3{
+
+        font-size:1.1rem;
+
+    }
+
+
+    .view-project{
+
+        transform:
+            translateY(0);
+
+    }
+
+
+    .portfolio-before-after{
+
+        margin-top:110px;
+
+    }
+
+
+    .portfolio-cta{
+
+        margin-top:110px;
+
+        padding:
+            75px 30px;
+
+    }
+
+}
+
+
+/* =====================================================
+   Mobile
+===================================================== */
+
+@media (max-width:600px){
+
+    .portfolio-hero{
+
+        width:90%;
+
+        padding-top:135px;
+
+        padding-bottom:60px;
+
+    }
+
+
+    .portfolio-badge{
+
+        padding:
+            8px 14px;
+
+        font-size:.75rem;
+
+    }
+
+
+    .portfolio-hero h1{
+
+        font-size:2.65rem;
+
+    }
+
+
+    .portfolio-hero p{
+
+        font-size:.9rem;
+
+        line-height:1.7;
+
+    }
+
+
+    /* Filters */
+
+    .portfolio-filters{
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        flex-wrap:nowrap;
+
+        padding-bottom:7px;
+
+        margin-bottom:35px;
+
+        scrollbar-width:none;
+
+    }
+
+
+    .portfolio-filters::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+
+    .filter-btn{
+
+        flex:
+            0 0 auto;
+
+        padding:
+            9px 16px;
+
+        font-size:.78rem;
+
+    }
+
+
+    /* Featured */
+
+    .featured-project{
+
+        border-radius:20px;
+
+    }
+
+
+    .featured-content h2{
+
+        font-size:1.9rem;
+
+    }
+
+
+    .featured-content p{
+
+        font-size:.88rem;
+
+    }
+
+
+    /* Grid */
+
+    .portfolio-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .portfolio-item.large{
+
+        grid-column:
+            span 1;
+
+    }
+
+
+    .portfolio-image{
+
+        border-radius:16px;
+
+    }
+
+
+    .portfolio-overlay{
+
+        padding:18px;
+
+    }
+
+
+    .portfolio-overlay span{
+
+        font-size:.65rem;
+
+    }
+
+
+    .portfolio-overlay h3{
+
+        font-size:1rem;
+
+    }
+
+
+    .view-project{
+
+        top:15px;
+
+        right:15px;
+
+        width:38px;
+
+        height:38px;
+
+        font-size:.8rem;
+
+    }
+
+
+    /* Before / After */
+
+    .portfolio-before-after{
+
+        margin-top:90px;
+
+    }
+
+
+    .before-after-heading{
+
+        margin-bottom:28px;
+
+    }
+
+
+    .before-after-heading h2{
+
+        font-size:2.2rem;
+
+    }
+
+
+    .before-after-heading p{
+
+        font-size:.87rem;
+
+    }
+
+
+    .portfolio-comparison{
+
+        border-radius:16px;
+
+    }
+
+
+    .comparison-handle{
+
+        width:40px;
+
+        height:40px;
+
+        font-size:.8rem;
+
+    }
+
+
+    .comparison-label{
+
+        top:14px;
+
+        padding:
+            6px 9px;
+
+        font-size:.6rem;
+
+    }
+
+
+    .before-label{
+
+        left:14px;
+
+    }
+
+
+    .after-label{
+
+        right:14px;
+
+    }
+
+
+    /* CTA */
+
+    .portfolio-cta{
+
+        margin-top:90px;
+
+        padding:
+            65px 20px;
+
+        border-radius:22px;
+
+    }
+
+
+    .portfolio-cta h2{
+
+        font-size:2.15rem;
+
+    }
+
+
+    .portfolio-cta p{
+
+        font-size:.87rem;
+
+    }
+
+}
+
+
+/* =====================================================
+   Very Small Screens
+===================================================== */
+
+@media (max-width:380px){
+
+    .portfolio-hero h1{
+
+        font-size:2.35rem;
+
+    }
+
+
+    .featured-content h2{
+
+        font-size:1.7rem;
+
+    }
+
+
+    .portfolio-cta h2{
+
+        font-size:1.9rem;
+
+    }
+
+}

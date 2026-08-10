@@ -1,0 +1,2225 @@
+/* =====================================================
+   MidFlow Services
+   services.css
+   Part 1
+===================================================== */
+
+
+/* =====================================================
+   SERVICES HERO
+===================================================== */
+
+.services-hero{
+
+    width:min(900px,92%);
+
+    margin:0 auto;
+
+    padding-top:190px;
+
+    padding-bottom:90px;
+
+    text-align:center;
+
+}
+
+
+/* Badge */
+
+.services-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:9px 17px;
+
+    margin-bottom:24px;
+
+    border-radius:50px;
+
+    color:var(--green);
+
+    background:
+        rgba(34,197,94,.09);
+
+    border:
+        1px solid
+        rgba(34,197,94,.18);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    letter-spacing:.04em;
+
+}
+
+
+/* Heading */
+
+.services-hero h1{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(3rem,6vw,5rem);
+
+    line-height:1.05;
+
+    letter-spacing:-.045em;
+
+    margin-bottom:25px;
+
+}
+
+
+/* Gradient heading */
+
+.services-hero h1 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+/* Description */
+
+.services-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    font-size:1.02rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   PRICING SECTION
+===================================================== */
+
+.pricing-section{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+}
+
+
+/* Pricing heading */
+
+.pricing-header{
+
+    text-align:center;
+
+    max-width:650px;
+
+    margin:
+        0 auto 55px;
+
+}
+
+
+.pricing-header > span{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.pricing-header h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,3.5rem);
+
+    line-height:1.1;
+
+    margin-bottom:17px;
+
+}
+
+
+.pricing-header h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.pricing-header p{
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+    font-size:.94rem;
+
+}
+
+
+/* =====================================================
+   PRICING GRID
+===================================================== */
+
+.pricing-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+
+    align-items:stretch;
+
+}
+
+
+/* =====================================================
+   PRICING CARD
+===================================================== */
+
+.pricing-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:34px 30px 30px;
+
+    min-height:600px;
+
+    border-radius:24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.015)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,.25);
+
+    overflow:hidden;
+
+    transition:
+        transform .4s
+        cubic-bezier(.2,.8,.2,1),
+        border-color .4s ease,
+        box-shadow .4s ease;
+
+}
+
+
+/* Card glow */
+
+.pricing-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:240px;
+
+    height:240px;
+
+    top:-150px;
+
+    right:-100px;
+
+    border-radius:50%;
+
+    background:
+        rgba(34,197,94,.12);
+
+    filter:
+        blur(70px);
+
+    opacity:0;
+
+    transition:
+        opacity .4s ease;
+
+}
+
+
+/* Hover */
+
+.pricing-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(34,197,94,.2);
+
+    box-shadow:
+        0 35px 75px
+        rgba(0,0,0,.35);
+
+}
+
+
+.pricing-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* =====================================================
+   FEATURED / STANDARD CARD
+===================================================== */
+
+.pricing-card.featured{
+
+    border-color:
+        rgba(34,197,94,.35);
+
+    background:
+
+        radial-gradient(
+            circle at 80% 0%,
+            rgba(34,197,94,.1),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.07),
+            rgba(255,255,255,.02)
+        );
+
+    box-shadow:
+        0 30px 80px
+        rgba(34,197,94,.08);
+
+}
+
+
+/* Featured top glow */
+
+.pricing-card.featured::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:10%;
+
+    width:80%;
+
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--green),
+            var(--cyan),
+            transparent
+        );
+
+}
+
+
+/* =====================================================
+   POPULAR BADGE
+===================================================== */
+
+.popular-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    padding:
+        6px 10px;
+
+    border-radius:7px;
+
+    color:#04110a;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            #86efac
+        );
+
+    font-size:.65rem;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:.06em;
+
+}
+
+
+/* =====================================================
+   PACKAGE TOP
+===================================================== */
+
+.pricing-card-top{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* Icon */
+
+.package-icon{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:22px;
+
+    border-radius:14px;
+
+    color:var(--green);
+
+    background:
+        rgba(34,197,94,.08);
+
+    border:
+        1px solid
+        rgba(34,197,94,.14);
+
+    font-size:18px;
+
+}
+
+
+/* Package label */
+
+.package-label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#94a3b8;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.1em;
+
+}
+
+
+/* Package title */
+
+.pricing-card h3{
+
+    font-family:"Space Grotesk";
+
+    font-size:1.65rem;
+
+    margin-bottom:10px;
+
+}
+
+
+/* Package description */
+
+.pricing-card-top p{
+
+    color:var(--gray);
+
+    font-size:.85rem;
+
+    line-height:1.65;
+
+}
+
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.price{
+
+    display:flex;
+
+    align-items:baseline;
+
+    gap:8px;
+
+    margin-top:30px;
+
+}
+
+
+.price strong{
+
+    font-family:"Space Grotesk";
+
+    font-size:3.1rem;
+
+    line-height:1;
+
+    letter-spacing:-.04em;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff,
+            #a7f3d0
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.price > span{
+
+    color:#94a3b8;
+
+    font-size:.9rem;
+
+    font-weight:500;
+
+}
+
+
+/* Price note */
+
+.price-note{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+    font-size:.72rem;
+
+}
+
+
+/* =====================================================
+   PACKAGE FEATURES
+===================================================== */
+
+.package-features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:13px;
+
+    margin:
+        30px 0;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+
+.package-features li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:11px;
+
+    color:#cbd5e1;
+
+    font-size:.83rem;
+
+    line-height:1.5;
+
+}
+
+
+.package-features li i{
+
+    flex-shrink:0;
+
+    margin-top:3px;
+
+    color:var(--green);
+
+    font-size:.72rem;
+
+}
+
+
+/* =====================================================
+   PACKAGE BUTTON
+===================================================== */
+
+.package-button{
+
+    margin-top:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    min-height:48px;
+
+    border-radius:12px;
+
+    color:#e2e8f0;
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid
+        rgba(255,255,255,.09);
+
+    font-size:.84rem;
+
+    font-weight:600;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+
+.package-button:hover{
+
+    color:white;
+
+    background:
+        rgba(34,197,94,.1);
+
+    border-color:
+        rgba(34,197,94,.3);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* Featured button */
+
+.pricing-card.featured
+.package-button{
+
+    color:#03120a;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--green),
+            #2dd4bf
+        );
+
+    border-color:transparent;
+
+    box-shadow:
+        0 10px 30px
+        rgba(34,197,94,.15);
+
+}
+
+
+.pricing-card.featured
+.package-button:hover{
+
+    color:#03120a;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(34,197,94,.22);
+
+}
+
+
+/* =====================================================
+   HOW IT WORKS
+===================================================== */
+
+.how-it-works{
+
+    width:min(1200px,92%);
+
+    margin:
+        150px auto 0;
+
+}
+
+
+/* Shared section heading */
+
+.section-heading{
+
+    max-width:650px;
+
+    margin:
+        0 auto 60px;
+
+    text-align:center;
+
+}
+
+
+.section-heading > span{
+
+    display:block;
+
+    margin-bottom:13px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.section-heading h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,3.5rem);
+
+    line-height:1.1;
+
+    margin-bottom:17px;
+
+}
+
+
+.section-heading h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.section-heading p{
+
+    color:var(--gray);
+
+    font-size:.94rem;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   PROCESS GRID
+===================================================== */
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+
+/* Process card */
+
+.process-step{
+
+    position:relative;
+
+    padding:30px 25px;
+
+    min-height:310px;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+    transition:
+        transform .4s ease,
+        border-color .4s ease,
+        background .4s ease;
+
+}
+
+
+.process-step:hover{
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(34,197,94,.2);
+
+    background:
+        rgba(34,197,94,.035);
+
+}
+
+
+/* Step number */
+
+.step-number{
+
+    position:absolute;
+
+    top:22px;
+
+    right:22px;
+
+    color:
+        rgba(255,255,255,.15);
+
+    font-family:"Space Grotesk";
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+
+/* Step icon */
+
+.step-icon{
+
+    width:46px;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:28px;
+
+    border-radius:13px;
+
+    color:var(--green);
+
+    background:
+        rgba(34,197,94,.08);
+
+    border:
+        1px solid
+        rgba(34,197,94,.13);
+
+}
+
+
+/* Step heading */
+
+.process-step h3{
+
+    font-family:"Space Grotesk";
+
+    font-size:1.15rem;
+
+    margin-bottom:12px;
+
+}
+
+
+/* Step paragraph */
+
+.process-step p{
+
+    color:var(--gray);
+
+    font-size:.82rem;
+
+    line-height:1.7;
+
+}
+
+
+/* Arrow */
+
+.step-arrow{
+
+    position:absolute;
+
+    bottom:22px;
+
+    right:24px;
+
+    color:
+        rgba(255,255,255,.2);
+
+    font-size:1.1rem;
+
+}
+
+
+/* =====================================================
+   REQUIREMENTS
+===================================================== */
+
+.requirements{
+
+    width:min(1100px,92%);
+
+    margin:
+        150px auto 0;
+
+    display:grid;
+
+    grid-template-columns:
+        .8fr 1.2fr;
+
+    gap:80px;
+
+    align-items:start;
+
+}
+
+
+/* Content */
+
+.requirements-content{
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+
+.requirements-content > span{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.requirements-content h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:3rem;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+}
+
+
+.requirements-content h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.requirements-content p{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+    line-height:1.8;
+
+    max-width:390px;
+
+}
+
+
+/* =====================================================
+   REQUIREMENT LIST
+===================================================== */
+
+.requirements-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.requirement-item{
+
+    display:grid;
+
+    grid-template-columns:45px 1fr;
+
+    gap:18px;
+
+    padding:
+        25px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.07);
+
+}
+
+
+.requirement-item:first-child{
+
+    padding-top:0;
+
+}
+
+
+.requirement-item > span{
+
+    color:var(--green);
+
+    font-family:"Space Grotesk";
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+
+.requirement-item h3{
+
+    font-family:"Space Grotesk";
+
+    font-size:1rem;
+
+    margin-bottom:7px;
+
+}
+
+
+.requirement-item p{
+
+    color:var(--gray);
+
+    font-size:.8rem;
+
+    line-height:1.65;
+
+    margin:0;
+
+}
+
+
+/* =====================================================
+   SERVICES FAQ
+===================================================== */
+
+.services-faq{
+
+    width:min(850px,92%);
+
+    margin:
+        150px auto 0;
+
+}
+
+
+.faq-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+
+.faq-list details{
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+    border-radius:16px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    overflow:hidden;
+
+    transition:
+        border-color .3s ease,
+        background .3s ease;
+
+}
+
+
+.faq-list details[open]{
+
+    border-color:
+        rgba(34,197,94,.2);
+
+    background:
+        rgba(34,197,94,.025);
+
+}
+
+
+.faq-list summary{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:
+        21px 24px;
+
+    color:#e2e8f0;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    list-style:none;
+
+}
+
+
+.faq-list summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+
+.faq-list summary i{
+
+    color:#64748b;
+
+    font-size:.75rem;
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+
+}
+
+
+.faq-list details[open]
+summary i{
+
+    color:var(--green);
+
+    transform:
+        rotate(45deg);
+
+}
+
+
+.faq-list details p{
+
+    padding:
+        0 24px 22px;
+
+    color:var(--gray);
+
+    font-size:.83rem;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.services-cta{
+
+    position:relative;
+
+    width:min(1000px,92%);
+
+    margin:
+        150px auto 0;
+
+    padding:
+        100px 35px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    background:
+
+        radial-gradient(
+            circle at 50% 110%,
+            rgba(34,197,94,.2),
+            transparent 55%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.015)
+        );
+
+}
+
+
+/* CTA glow */
+
+.services-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    top:-350px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(34,211,238,.18),
+            transparent 70%
+        );
+
+    filter:
+        blur(70px);
+
+    pointer-events:none;
+
+}
+
+
+/* CTA label */
+
+.services-cta > span{
+
+    position:relative;
+
+    z-index:2;
+
+    display:block;
+
+    margin-bottom:17px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+/* CTA heading */
+
+.services-cta h2{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+
+    margin:
+        0 auto 20px;
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,3.7rem);
+
+    line-height:1.08;
+
+}
+
+
+.services-cta h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.services-cta p{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:550px;
+
+    margin:
+        0 auto 32px;
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+    line-height:1.7;
+
+}
+
+
+.services-cta .primary{
+
+    position:relative;
+
+    z-index:2;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+/* =====================================================
+   PAGE ENTRANCE
+===================================================== */
+
+.services-hero{
+
+    animation:
+        servicesHeroIn 1s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+}
+
+
+@keyframes servicesHeroIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(30px);
+
+        filter:
+            blur(7px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+        filter:
+            blur(0);
+
+    }
+
+}
+
+
+.pricing-section{
+
+    animation:
+        servicesSectionIn .9s ease both;
+
+    animation-delay:.15s;
+
+}
+
+
+@keyframes servicesSectionIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+/* =====================================================
+   MidFlow Services
+   services.css
+   Part 2 — Responsive + Final Polish
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:1000px){
+
+    /* ---------------------------------------------
+       Hero
+    --------------------------------------------- */
+
+    .services-hero{
+
+        padding-top:165px;
+
+        padding-bottom:75px;
+
+    }
+
+
+    /* ---------------------------------------------
+       Pricing
+    --------------------------------------------- */
+
+    .pricing-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        max-width:800px;
+
+        margin:auto;
+
+    }
+
+
+    /*
+       Premium moves underneath the first
+       two cards.
+    */
+
+    .pricing-card:last-child{
+
+        grid-column:
+            1 / -1;
+
+        max-width:390px;
+
+        width:100%;
+
+        justify-self:center;
+
+    }
+
+
+    /* ---------------------------------------------
+       Process
+    --------------------------------------------- */
+
+    .process-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .process-step{
+
+        min-height:280px;
+
+    }
+
+
+    /* ---------------------------------------------
+       Requirements
+    --------------------------------------------- */
+
+    .requirements{
+
+        grid-template-columns:
+            1fr;
+
+        gap:50px;
+
+    }
+
+
+    .requirements-content{
+
+        position:static;
+
+        text-align:center;
+
+    }
+
+
+    .requirements-content p{
+
+        margin:auto;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width:750px){
+
+    /* ---------------------------------------------
+       Hero
+    --------------------------------------------- */
+
+    .services-hero{
+
+        width:90%;
+
+        padding-top:145px;
+
+        padding-bottom:65px;
+
+    }
+
+
+    .services-hero h1{
+
+        font-size:
+            clamp(2.7rem,8vw,4rem);
+
+    }
+
+
+    /* ---------------------------------------------
+       Pricing
+    --------------------------------------------- */
+
+    .pricing-section{
+
+        width:90%;
+
+    }
+
+
+    .pricing-grid{
+
+        grid-template-columns:1fr;
+
+        max-width:500px;
+
+    }
+
+
+    .pricing-card{
+
+        min-height:auto;
+
+    }
+
+
+    .pricing-card:last-child{
+
+        grid-column:auto;
+
+        max-width:none;
+
+    }
+
+
+    /*
+       Put Standard first visually on mobile.
+       It remains the recommended package.
+    */
+
+    .pricing-card.featured{
+
+        order:-1;
+
+    }
+
+
+    /* ---------------------------------------------
+       Process
+    --------------------------------------------- */
+
+    .process-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+
+    .how-it-works{
+
+        margin-top:110px;
+
+    }
+
+
+    /* ---------------------------------------------
+       Requirements
+    --------------------------------------------- */
+
+    .requirements{
+
+        width:90%;
+
+        margin-top:110px;
+
+    }
+
+
+    /* ---------------------------------------------
+       FAQ
+    --------------------------------------------- */
+
+    .services-faq{
+
+        margin-top:110px;
+
+    }
+
+
+    /* ---------------------------------------------
+       CTA
+    --------------------------------------------- */
+
+    .services-cta{
+
+        margin-top:110px;
+
+        padding:
+            80px 30px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:600px){
+
+    /* ---------------------------------------------
+       Hero
+    --------------------------------------------- */
+
+    .services-hero{
+
+        padding-top:130px;
+
+        padding-bottom:55px;
+
+    }
+
+
+    .services-badge{
+
+        padding:
+            8px 14px;
+
+        font-size:.72rem;
+
+    }
+
+
+    .services-hero h1{
+
+        font-size:2.55rem;
+
+        letter-spacing:-.035em;
+
+    }
+
+
+    .services-hero p{
+
+        font-size:.88rem;
+
+        line-height:1.7;
+
+    }
+
+
+    /* ---------------------------------------------
+       Section headings
+    --------------------------------------------- */
+
+    .pricing-header{
+
+        margin-bottom:35px;
+
+    }
+
+
+    .pricing-header h2,
+    .section-heading h2{
+
+        font-size:2.25rem;
+
+    }
+
+
+    .pricing-header p,
+    .section-heading p{
+
+        font-size:.86rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       Pricing Cards
+    --------------------------------------------- */
+
+    .pricing-grid{
+
+        gap:14px;
+
+    }
+
+
+    .pricing-card{
+
+        padding:
+            28px 24px 24px;
+
+        border-radius:20px;
+
+    }
+
+
+    .pricing-card.featured{
+
+        transform:none;
+
+    }
+
+
+    .pricing-card.featured:hover{
+
+        transform:
+            translateY(-6px);
+
+    }
+
+
+    .package-icon{
+
+        width:44px;
+
+        height:44px;
+
+        margin-bottom:18px;
+
+        border-radius:12px;
+
+    }
+
+
+    .pricing-card h3{
+
+        font-size:1.5rem;
+
+    }
+
+
+    .pricing-card-top p{
+
+        font-size:.82rem;
+
+    }
+
+
+    .price{
+
+        margin-top:25px;
+
+    }
+
+
+    .price strong{
+
+        font-size:2.8rem;
+
+    }
+
+
+    .package-features{
+
+        gap:11px;
+
+        margin:
+            25px 0;
+
+    }
+
+
+    .package-features li{
+
+        font-size:.8rem;
+
+    }
+
+
+    .package-button{
+
+        min-height:46px;
+
+        font-size:.8rem;
+
+    }
+
+
+    .popular-badge{
+
+        top:15px;
+
+        right:15px;
+
+        font-size:.58rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       Process
+    --------------------------------------------- */
+
+    .how-it-works{
+
+        margin-top:90px;
+
+    }
+
+
+    .section-heading{
+
+        margin-bottom:35px;
+
+    }
+
+
+    .process-grid{
+
+        grid-template-columns:1fr;
+
+        gap:12px;
+
+    }
+
+
+    .process-step{
+
+        min-height:auto;
+
+        padding:
+            26px 22px 45px;
+
+        border-radius:18px;
+
+    }
+
+
+    .process-step p{
+
+        max-width:500px;
+
+        font-size:.8rem;
+
+    }
+
+
+    .step-arrow{
+
+        bottom:16px;
+
+        right:22px;
+
+        transform:
+            rotate(-90deg);
+
+    }
+
+
+    /* ---------------------------------------------
+       Requirements
+    --------------------------------------------- */
+
+    .requirements{
+
+        margin-top:90px;
+
+        gap:40px;
+
+    }
+
+
+    .requirements-content h2{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .requirements-content p{
+
+        font-size:.85rem;
+
+    }
+
+
+    .requirement-item{
+
+        grid-template-columns:
+            35px 1fr;
+
+        gap:13px;
+
+        padding:
+            21px 0;
+
+    }
+
+
+    .requirement-item h3{
+
+        font-size:.95rem;
+
+    }
+
+
+    .requirement-item p{
+
+        font-size:.77rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       FAQ
+    --------------------------------------------- */
+
+    .services-faq{
+
+        margin-top:90px;
+
+    }
+
+
+    .faq-list{
+
+        gap:8px;
+
+    }
+
+
+    .faq-list summary{
+
+        padding:
+            19px 18px;
+
+        font-size:.82rem;
+
+    }
+
+
+    .faq-list details p{
+
+        padding:
+            0 18px 19px;
+
+        font-size:.78rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       CTA
+    --------------------------------------------- */
+
+    .services-cta{
+
+        width:90%;
+
+        margin-top:90px;
+
+        padding:
+            65px 20px;
+
+        border-radius:22px;
+
+    }
+
+
+    .services-cta h2{
+
+        font-size:2.15rem;
+
+    }
+
+
+    .services-cta p{
+
+        font-size:.83rem;
+
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width:380px){
+
+    .services-hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .pricing-card{
+
+        padding:
+            25px 20px 21px;
+
+    }
+
+
+    .price strong{
+
+        font-size:2.55rem;
+
+    }
+
+
+    .pricing-card h3{
+
+        font-size:1.4rem;
+
+    }
+
+
+    .requirements-content h2{
+
+        font-size:2.05rem;
+
+    }
+
+
+    .services-cta h2{
+
+        font-size:1.9rem;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .services-hero,
+    .pricing-section{
+
+        animation:none;
+
+    }
+
+
+    .pricing-card,
+    .process-step,
+    .package-button{
+
+        transition:none;
+
+    }
+
+}

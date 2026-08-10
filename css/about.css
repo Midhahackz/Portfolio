@@ -1,0 +1,1927 @@
+/* =====================================================
+   MidFlow About
+   about.css
+   Part 1 — Main Design
+===================================================== */
+
+
+/* =====================================================
+   ABOUT HERO
+===================================================== */
+
+.about-hero{
+
+    width:min(900px,92%);
+
+    margin:0 auto;
+
+    padding-top:190px;
+
+    padding-bottom:100px;
+
+    text-align:center;
+
+}
+
+
+.about-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:9px 17px;
+
+    margin-bottom:24px;
+
+    border-radius:50px;
+
+    color:var(--green);
+
+    background:
+        rgba(34,197,94,.09);
+
+    border:
+        1px solid
+        rgba(34,197,94,.18);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+
+.about-hero h1{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(3rem,6vw,5rem);
+
+    line-height:1.05;
+
+    letter-spacing:-.045em;
+
+    margin-bottom:25px;
+
+}
+
+
+.about-hero h1 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.about-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.about-story{
+
+    width:min(1050px,92%);
+
+    margin:
+        70px auto 0;
+
+    display:grid;
+
+    grid-template-columns:
+        .55fr 1.45fr;
+
+    gap:80px;
+
+    padding:
+        70px 0;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.07);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.07);
+
+}
+
+
+.story-label{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+}
+
+
+.story-label span{
+
+    color:var(--green);
+
+    font-family:"Space Grotesk";
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+
+.story-label p{
+
+    color:#64748b;
+
+    font-size:.78rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.1em;
+
+}
+
+
+.story-content{
+
+    max-width:700px;
+
+}
+
+
+.story-content h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.2rem,4vw,3.3rem);
+
+    line-height:1.1;
+
+    letter-spacing:-.03em;
+
+    margin-bottom:30px;
+
+}
+
+
+.story-content h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.story-content p{
+
+    color:var(--gray);
+
+    font-size:.94rem;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+
+.story-content strong{
+
+    color:#e2e8f0;
+
+    font-weight:600;
+
+}
+
+
+/* =====================================================
+   MISSION
+===================================================== */
+
+.about-mission{
+
+    width:min(1050px,92%);
+
+    margin:
+        130px auto 0;
+
+}
+
+
+.mission-card{
+
+    position:relative;
+
+    padding:
+        80px 60px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    background:
+
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(34,197,94,.15),
+            transparent 55%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.015)
+        );
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.25);
+
+}
+
+
+.mission-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    left:50%;
+
+    top:-280px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+        rgba(34,211,238,.12);
+
+    filter:
+        blur(80px);
+
+}
+
+
+.mission-icon{
+
+    position:relative;
+
+    z-index:2;
+
+    width:54px;
+
+    height:54px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:
+        0 auto 22px;
+
+    border-radius:15px;
+
+    color:var(--green);
+
+    background:
+        rgba(34,197,94,.08);
+
+    border:
+        1px solid
+        rgba(34,197,94,.15);
+
+}
+
+
+.mission-card > span{
+
+    position:relative;
+
+    z-index:2;
+
+    display:block;
+
+    margin-bottom:15px;
+
+    color:var(--green);
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.mission-card h2{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,4rem);
+
+    line-height:1;
+
+    letter-spacing:-.04em;
+
+    margin-bottom:25px;
+
+}
+
+
+.mission-card h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.mission-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:600px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    font-size:.94rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   FUTURE SECTION
+===================================================== */
+
+.future-section{
+
+    width:min(1100px,92%);
+
+    margin:
+        150px auto 0;
+
+}
+
+
+.section-heading{
+
+    max-width:650px;
+
+    margin:
+        0 auto 60px;
+
+    text-align:center;
+
+}
+
+
+.section-heading > span{
+
+    display:block;
+
+    margin-bottom:13px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.section-heading h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,3.5rem);
+
+    line-height:1.1;
+
+    margin-bottom:17px;
+
+}
+
+
+.section-heading h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.section-heading p{
+
+    color:var(--gray);
+
+    font-size:.94rem;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   FUTURE GRID
+===================================================== */
+
+.future-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+
+.future-card{
+
+    position:relative;
+
+    min-height:280px;
+
+    padding:
+        32px 30px;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+    background:
+        rgba(255,255,255,.025);
+
+    transition:
+        transform .4s
+        cubic-bezier(.2,.8,.2,1),
+        border-color .4s ease,
+        background .4s ease;
+
+}
+
+
+.future-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    right:-100px;
+
+    bottom:-100px;
+
+    border-radius:50%;
+
+    background:
+        rgba(34,197,94,.1);
+
+    filter:
+        blur(55px);
+
+    opacity:0;
+
+    transition:
+        opacity .4s ease;
+
+}
+
+
+.future-card:hover{
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(34,197,94,.2);
+
+    background:
+        rgba(34,197,94,.025);
+
+}
+
+
+.future-card:hover::after{
+
+    opacity:1;
+
+}
+
+
+/* Number */
+
+.future-number{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    color:
+        rgba(255,255,255,.12);
+
+    font-family:"Space Grotesk";
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+
+/* Icon */
+
+.future-icon{
+
+    width:47px;
+
+    height:47px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:27px;
+
+    border-radius:13px;
+
+    color:var(--green);
+
+    background:
+        rgba(34,197,94,.08);
+
+    border:
+        1px solid
+        rgba(34,197,94,.13);
+
+}
+
+
+/* Heading */
+
+.future-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:"Space Grotesk";
+
+    font-size:1.25rem;
+
+    margin-bottom:12px;
+
+}
+
+
+/* Paragraph */
+
+.future-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:470px;
+
+    color:var(--gray);
+
+    font-size:.83rem;
+
+    line-height:1.75;
+
+}
+
+
+/* =====================================================
+   VISION SECTION
+===================================================== */
+
+.vision-section{
+
+    width:min(900px,92%);
+
+    margin:
+        160px auto 0;
+
+    text-align:center;
+
+}
+
+
+.vision-line{
+
+    width:1px;
+
+    height:80px;
+
+    margin:
+        0 auto 30px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            var(--green)
+        );
+
+}
+
+
+.vision-section > span{
+
+    display:block;
+
+    margin-bottom:20px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.vision-section h2{
+
+    max-width:800px;
+
+    margin:
+        0 auto 25px;
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,4rem);
+
+    line-height:1.08;
+
+    letter-spacing:-.035em;
+
+}
+
+
+.vision-section h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.vision-section p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    font-size:.94rem;
+
+    line-height:1.85;
+
+}
+
+
+/* =====================================================
+   CURRENTLY SECTION
+===================================================== */
+
+.currently-section{
+
+    width:min(1050px,92%);
+
+    margin:
+        160px auto 0;
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    padding:
+        70px 0;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.07);
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.07);
+
+}
+
+
+.currently-content > span{
+
+    display:block;
+
+    margin-bottom:13px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.currently-content h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.2rem,4vw,3.2rem);
+
+    line-height:1.1;
+
+    margin-bottom:23px;
+
+}
+
+
+.currently-content h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.currently-content p{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+
+/* Secondary button */
+
+.secondary-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:15px;
+
+    padding:
+        12px 18px;
+
+    border-radius:11px;
+
+    color:#cbd5e1;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid
+        rgba(255,255,255,.09);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    transition:
+        transform .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+
+}
+
+
+.secondary-button:hover{
+
+    transform:
+        translateY(-2px);
+
+    color:white;
+
+    border-color:
+        rgba(34,197,94,.3);
+
+}
+
+
+/* =====================================================
+   CURRENTLY VISUAL
+===================================================== */
+
+.currently-visual{
+
+    position:relative;
+
+    min-height:400px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+/* Core */
+
+.visual-core{
+
+    position:relative;
+
+    z-index:3;
+
+    width:115px;
+
+    height:115px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:30px;
+
+    font-family:"Space Grotesk";
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    color:#06110b;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    box-shadow:
+        0 0 80px
+        rgba(34,197,94,.2);
+
+}
+
+
+/* Orbit */
+
+.visual-orbit{
+
+    position:absolute;
+
+    border:
+        1px solid
+        rgba(34,197,94,.18);
+
+    border-radius:50%;
+
+}
+
+
+.orbit-one{
+
+    width:260px;
+
+    height:260px;
+
+    transform:
+        rotate(25deg);
+
+}
+
+
+.orbit-two{
+
+    width:360px;
+
+    height:170px;
+
+    transform:
+        rotate(-35deg);
+
+    border-color:
+        rgba(34,211,238,.15);
+
+}
+
+
+/* =====================================================
+   ABOUT CTA
+===================================================== */
+
+.about-cta{
+
+    position:relative;
+
+    width:min(1000px,92%);
+
+    margin:
+        150px auto 0;
+
+    padding:
+        100px 35px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    background:
+
+        radial-gradient(
+            circle at 50% 110%,
+            rgba(34,197,94,.2),
+            transparent 55%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.015)
+        );
+
+}
+
+
+.about-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    top:-350px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(34,211,238,.18),
+            transparent 70%
+        );
+
+    filter:
+        blur(70px);
+
+    pointer-events:none;
+
+}
+
+
+.about-cta > span{
+
+    position:relative;
+
+    z-index:2;
+
+    display:block;
+
+    margin-bottom:17px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.about-cta h2{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:750px;
+
+    margin:
+        0 auto 20px;
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,3.7rem);
+
+    line-height:1.08;
+
+}
+
+
+.about-cta h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.about-cta p{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:600px;
+
+    margin:
+        0 auto 32px;
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+    line-height:1.75;
+
+}
+
+
+.about-cta .primary{
+
+    position:relative;
+
+    z-index:2;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+/* =====================================================
+   MidFlow About
+   about.css
+   Part 2 — Responsive + Final Polish
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:1000px){
+
+    /* ---------------------------------------------
+       Hero
+    --------------------------------------------- */
+
+    .about-hero{
+
+        padding-top:165px;
+
+        padding-bottom:75px;
+
+    }
+
+
+    /* ---------------------------------------------
+       Story
+    --------------------------------------------- */
+
+    .about-story{
+
+        grid-template-columns:
+            1fr;
+
+        gap:35px;
+
+    }
+
+
+    .story-label{
+
+        justify-content:center;
+
+    }
+
+
+    .story-content{
+
+        max-width:700px;
+
+        margin:auto;
+
+        text-align:center;
+
+    }
+
+
+    /* ---------------------------------------------
+       Future
+    --------------------------------------------- */
+
+    .future-grid{
+
+        gap:13px;
+
+    }
+
+
+    /* ---------------------------------------------
+       Currently
+    --------------------------------------------- */
+
+    .currently-section{
+
+        grid-template-columns:
+            1fr;
+
+        gap:60px;
+
+    }
+
+
+    .currently-content{
+
+        max-width:650px;
+
+        margin:auto;
+
+        text-align:center;
+
+    }
+
+
+    .currently-visual{
+
+        min-height:350px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width:750px){
+
+    /* ---------------------------------------------
+       Hero
+    --------------------------------------------- */
+
+    .about-hero{
+
+        width:90%;
+
+        padding-top:145px;
+
+        padding-bottom:65px;
+
+    }
+
+
+    .about-hero h1{
+
+        font-size:
+            clamp(2.7rem,8vw,4rem);
+
+    }
+
+
+    .about-hero p{
+
+        font-size:.9rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       Story
+    --------------------------------------------- */
+
+    .about-story{
+
+        width:90%;
+
+        margin-top:50px;
+
+        padding:
+            55px 0;
+
+    }
+
+
+    .story-label{
+
+        justify-content:flex-start;
+
+    }
+
+
+    .story-content{
+
+        text-align:left;
+
+    }
+
+
+    /* ---------------------------------------------
+       Mission
+    --------------------------------------------- */
+
+    .about-mission{
+
+        width:90%;
+
+        margin-top:100px;
+
+    }
+
+
+    .mission-card{
+
+        padding:
+            65px 35px;
+
+    }
+
+
+    /* ---------------------------------------------
+       Future
+    --------------------------------------------- */
+
+    .future-section{
+
+        width:90%;
+
+        margin-top:110px;
+
+    }
+
+
+    .section-heading{
+
+        margin-bottom:45px;
+
+    }
+
+
+    .future-grid{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .future-card{
+
+        min-height:auto;
+
+        padding:
+            28px 25px;
+
+    }
+
+
+    /* ---------------------------------------------
+       Vision
+    --------------------------------------------- */
+
+    .vision-section{
+
+        width:90%;
+
+        margin-top:110px;
+
+    }
+
+
+    /* ---------------------------------------------
+       Currently
+    --------------------------------------------- */
+
+    .currently-section{
+
+        width:90%;
+
+        margin-top:110px;
+
+        padding:
+            60px 0;
+
+    }
+
+
+    /* ---------------------------------------------
+       CTA
+    --------------------------------------------- */
+
+    .about-cta{
+
+        margin-top:110px;
+
+        padding:
+            80px 30px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:600px){
+
+    /* ---------------------------------------------
+       Hero
+    --------------------------------------------- */
+
+    .about-hero{
+
+        padding-top:130px;
+
+        padding-bottom:55px;
+
+    }
+
+
+    .about-badge{
+
+        padding:
+            8px 14px;
+
+        font-size:.7rem;
+
+    }
+
+
+    .about-hero h1{
+
+        font-size:2.55rem;
+
+        letter-spacing:-.035em;
+
+    }
+
+
+    .about-hero p{
+
+        font-size:.86rem;
+
+        line-height:1.7;
+
+    }
+
+
+    /* ---------------------------------------------
+       Story
+    --------------------------------------------- */
+
+    .about-story{
+
+        margin-top:40px;
+
+        padding:
+            45px 0;
+
+    }
+
+
+    .story-label{
+
+        gap:12px;
+
+    }
+
+
+    .story-label p{
+
+        font-size:.7rem;
+
+    }
+
+
+    .story-content h2{
+
+        font-size:2.25rem;
+
+    }
+
+
+    .story-content p{
+
+        font-size:.84rem;
+
+        line-height:1.8;
+
+    }
+
+
+    /* ---------------------------------------------
+       Mission
+    --------------------------------------------- */
+
+    .about-mission{
+
+        margin-top:80px;
+
+    }
+
+
+    .mission-card{
+
+        padding:
+            55px 22px;
+
+        border-radius:22px;
+
+    }
+
+
+    .mission-icon{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+
+    .mission-card h2{
+
+        font-size:2.55rem;
+
+    }
+
+
+    .mission-card p{
+
+        font-size:.84rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       Future
+    --------------------------------------------- */
+
+    .future-section{
+
+        margin-top:90px;
+
+    }
+
+
+    .section-heading{
+
+        margin-bottom:35px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:2.25rem;
+
+    }
+
+
+    .section-heading p{
+
+        font-size:.84rem;
+
+    }
+
+
+    .future-card{
+
+        padding:
+            25px 22px;
+
+        border-radius:18px;
+
+    }
+
+
+    .future-icon{
+
+        width:44px;
+
+        height:44px;
+
+        margin-bottom:22px;
+
+    }
+
+
+    .future-card h3{
+
+        font-size:1.15rem;
+
+    }
+
+
+    .future-card p{
+
+        font-size:.79rem;
+
+        line-height:1.7;
+
+    }
+
+
+    /* ---------------------------------------------
+       Vision
+    --------------------------------------------- */
+
+    .vision-section{
+
+        margin-top:100px;
+
+    }
+
+
+    .vision-line{
+
+        height:60px;
+
+        margin-bottom:25px;
+
+    }
+
+
+    .vision-section h2{
+
+        font-size:2.35rem;
+
+    }
+
+
+    .vision-section p{
+
+        font-size:.84rem;
+
+        line-height:1.75;
+
+    }
+
+
+    /* ---------------------------------------------
+       Currently
+    --------------------------------------------- */
+
+    .currently-section{
+
+        margin-top:100px;
+
+        padding:
+            50px 0;
+
+    }
+
+
+    .currently-content h2{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .currently-content p{
+
+        font-size:.83rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       Visual
+    --------------------------------------------- */
+
+    .currently-visual{
+
+        min-height:300px;
+
+    }
+
+
+    .visual-core{
+
+        width:90px;
+
+        height:90px;
+
+        border-radius:23px;
+
+        font-size:2.4rem;
+
+    }
+
+
+    .orbit-one{
+
+        width:210px;
+
+        height:210px;
+
+    }
+
+
+    .orbit-two{
+
+        width:285px;
+
+        height:135px;
+
+    }
+
+
+    /* ---------------------------------------------
+       CTA
+    --------------------------------------------- */
+
+    .about-cta{
+
+        width:90%;
+
+        margin-top:90px;
+
+        padding:
+            65px 20px;
+
+        border-radius:22px;
+
+    }
+
+
+    .about-cta h2{
+
+        font-size:2.15rem;
+
+    }
+
+
+    .about-cta p{
+
+        font-size:.82rem;
+
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width:380px){
+
+    .about-hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .story-content h2{
+
+        font-size:2.05rem;
+
+    }
+
+
+    .mission-card h2{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .vision-section h2{
+
+        font-size:2.1rem;
+
+    }
+
+
+    .currently-content h2{
+
+        font-size:2.05rem;
+
+    }
+
+
+    .about-cta h2{
+
+        font-size:1.9rem;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .future-card,
+    .secondary-button{
+
+        transition:none;
+
+    }
+
+}

@@ -1,0 +1,1603 @@
+/* =====================================================
+   MidFlow Contact
+   contact.css
+   Part 1 — Main Design
+===================================================== */
+
+
+/* =====================================================
+   CONTACT HERO
+===================================================== */
+
+.contact-hero{
+
+    width:min(900px,92%);
+
+    margin:0 auto;
+
+    padding-top:190px;
+
+    padding-bottom:90px;
+
+    text-align:center;
+
+}
+
+
+.contact-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:9px 17px;
+
+    margin-bottom:24px;
+
+    border-radius:50px;
+
+    color:var(--green);
+
+    background:
+        rgba(34,197,94,.09);
+
+    border:
+        1px solid
+        rgba(34,197,94,.18);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+
+.contact-hero h1{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(3rem,6vw,5rem);
+
+    line-height:1.05;
+
+    letter-spacing:-.045em;
+
+    margin-bottom:25px;
+
+}
+
+
+.contact-hero h1 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.contact-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:var(--gray);
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section{
+
+    width:min(1100px,92%);
+
+    margin:
+        40px auto 0;
+
+    display:grid;
+
+    grid-template-columns:
+        .9fr 1.1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+/* =====================================================
+   CONTACT INFO
+===================================================== */
+
+.contact-info{
+
+    max-width:480px;
+
+}
+
+
+.contact-label{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.contact-info h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.4rem,4vw,3.5rem);
+
+    line-height:1.08;
+
+    letter-spacing:-.035em;
+
+    margin-bottom:22px;
+
+}
+
+
+.contact-info h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.contact-info > p{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+    line-height:1.85;
+
+}
+
+
+/* =====================================================
+   DISCORD BUTTON
+===================================================== */
+
+.discord-button{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    width:100%;
+
+    max-width:400px;
+
+    margin-top:32px;
+
+    padding:
+        17px 19px;
+
+    border-radius:16px;
+
+    color:#fff;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(88,101,242,.18),
+            rgba(34,197,94,.08)
+        );
+
+    border:
+        1px solid
+        rgba(88,101,242,.3);
+
+    overflow:hidden;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.discord-button::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            100deg,
+            transparent,
+            rgba(255,255,255,.06),
+            transparent
+        );
+
+    transform:
+        translateX(-100%);
+
+    transition:
+        transform .6s ease;
+
+}
+
+
+.discord-button:hover{
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(88,101,242,.5);
+
+    box-shadow:
+        0 18px 45px
+        rgba(88,101,242,.12);
+
+}
+
+
+.discord-button:hover::before{
+
+    transform:
+        translateX(100%);
+
+}
+
+
+.discord-button-icon{
+
+    position:relative;
+
+    z-index:2;
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:13px;
+
+    color:#fff;
+
+    background:
+        rgba(88,101,242,.2);
+
+    border:
+        1px solid
+        rgba(88,101,242,.25);
+
+    font-size:1.15rem;
+
+}
+
+
+.discord-button > span:nth-child(2){
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3px;
+
+}
+
+
+.discord-button small{
+
+    color:#94a3b8;
+
+    font-size:.68rem;
+
+    font-weight:500;
+
+}
+
+
+.discord-button strong{
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+
+.discord-button > i{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-left:auto;
+
+    color:#94a3b8;
+
+    font-size:.75rem;
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+
+}
+
+
+.discord-button:hover > i{
+
+    color:#fff;
+
+    transform:
+        translate(2px,-2px);
+
+}
+
+
+.contact-note{
+
+    max-width:400px;
+
+    margin-top:13px;
+
+    color:#64748b !important;
+
+    font-size:.72rem !important;
+
+    line-height:1.6 !important;
+
+}
+
+
+/* =====================================================
+   ORDER PROCESS
+===================================================== */
+
+.order-process{
+
+    position:relative;
+
+    padding:
+        35px 32px;
+
+    border-radius:24px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(34,197,94,.08),
+            transparent 40%
+        ),
+
+        rgba(255,255,255,.025);
+
+    box-shadow:
+        0 25px 65px
+        rgba(0,0,0,.25);
+
+}
+
+
+/* Vertical line */
+
+.order-process::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:54px;
+
+    top:105px;
+
+    bottom:45px;
+
+    width:1px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(34,197,94,.3),
+            rgba(34,197,94,.05)
+        );
+
+}
+
+
+/* Header */
+
+.order-header{
+
+    margin-bottom:30px;
+
+}
+
+
+.order-header > span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--green);
+
+    font-size:.7rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.order-header h3{
+
+    font-family:"Space Grotesk";
+
+    font-size:1.5rem;
+
+}
+
+
+/* =====================================================
+   ORDER STEP
+===================================================== */
+
+.order-step{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+        45px 1fr;
+
+    gap:20px;
+
+    padding:
+        17px 0;
+
+}
+
+
+.order-step-number{
+
+    position:absolute;
+
+    top:20px;
+
+    right:0;
+
+    color:
+        rgba(255,255,255,.12);
+
+    font-family:"Space Grotesk";
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+}
+
+
+/* Icon */
+
+.order-step-icon{
+
+    position:relative;
+
+    z-index:2;
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    color:var(--green);
+
+    background:
+        #0c1612;
+
+    border:
+        1px solid
+        rgba(34,197,94,.18);
+
+    font-size:.9rem;
+
+}
+
+
+/* Content */
+
+.order-step-content{
+
+    padding-right:35px;
+
+}
+
+
+.order-step-content h4{
+
+    font-family:"Space Grotesk";
+
+    font-size:.98rem;
+
+    margin-bottom:7px;
+
+}
+
+
+.order-step-content p{
+
+    color:var(--gray);
+
+    font-size:.78rem;
+
+    line-height:1.65;
+
+}
+
+
+/* =====================================================
+   REQUIREMENTS
+===================================================== */
+
+.contact-requirements{
+
+    width:min(1100px,92%);
+
+    margin:
+        150px auto 0;
+
+}
+
+
+/* Section heading */
+
+.section-heading{
+
+    max-width:650px;
+
+    margin:
+        0 auto 55px;
+
+    text-align:center;
+
+}
+
+
+.section-heading > span{
+
+    display:block;
+
+    margin-bottom:13px;
+
+    color:var(--green);
+
+    font-size:.76rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.section-heading h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,3.5rem);
+
+    line-height:1.1;
+
+    margin-bottom:17px;
+
+}
+
+
+.section-heading h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.section-heading p{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   REQUIREMENTS GRID
+===================================================== */
+
+.requirements-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:14px;
+
+}
+
+
+.contact-requirement{
+
+    position:relative;
+
+    min-height:235px;
+
+    padding:
+        28px 24px;
+
+    border-radius:18px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+    background:
+        rgba(255,255,255,.025);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        background .35s ease;
+
+}
+
+
+.contact-requirement:hover{
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(34,197,94,.2);
+
+    background:
+        rgba(34,197,94,.025);
+
+}
+
+
+.contact-requirement > span{
+
+    display:block;
+
+    margin-bottom:40px;
+
+    color:
+        rgba(34,197,94,.7);
+
+    font-family:"Space Grotesk";
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+}
+
+
+.contact-requirement h3{
+
+    font-family:"Space Grotesk";
+
+    font-size:1rem;
+
+    margin-bottom:10px;
+
+}
+
+
+.contact-requirement p{
+
+    color:var(--gray);
+
+    font-size:.76rem;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+.contact-faq{
+
+    width:min(850px,92%);
+
+    margin:
+        150px auto 0;
+
+}
+
+
+.contact-faq .section-heading{
+
+    margin-bottom:40px;
+
+}
+
+
+.faq-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:9px;
+
+}
+
+
+.faq-list details{
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+    border-radius:15px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    overflow:hidden;
+
+    transition:
+        border-color .3s ease,
+        background .3s ease;
+
+}
+
+
+.faq-list details[open]{
+
+    border-color:
+        rgba(34,197,94,.2);
+
+    background:
+        rgba(34,197,94,.025);
+
+}
+
+
+.faq-list summary{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:
+        21px 23px;
+
+    color:#e2e8f0;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    list-style:none;
+
+}
+
+
+.faq-list summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+
+.faq-list summary i{
+
+    color:#64748b;
+
+    font-size:.7rem;
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+
+}
+
+
+.faq-list details[open]
+summary i{
+
+    color:var(--green);
+
+    transform:
+        rotate(45deg);
+
+}
+
+
+.faq-list details p{
+
+    padding:
+        0 23px 21px;
+
+    color:var(--gray);
+
+    font-size:.79rem;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   FINAL CTA
+===================================================== */
+
+.contact-cta{
+
+    width:min(1000px,92%);
+
+    margin:
+        150px auto 0;
+
+    padding:
+        95px 30px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    background:
+
+        radial-gradient(
+            circle at 50% 110%,
+            rgba(34,197,94,.18),
+            transparent 55%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.015)
+        );
+
+}
+
+
+.contact-cta > span{
+
+    display:block;
+
+    margin-bottom:17px;
+
+    color:var(--green);
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+}
+
+
+.contact-cta h2{
+
+    max-width:750px;
+
+    margin:
+        0 auto 20px;
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(2.5rem,5vw,3.7rem);
+
+    line-height:1.08;
+
+}
+
+
+.contact-cta h2 span{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green),
+            var(--cyan),
+            var(--blue)
+        );
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+
+.contact-cta p{
+
+    color:var(--gray);
+
+    font-size:.9rem;
+
+    line-height:1.7;
+
+}
+/* =====================================================
+   MidFlow Contact
+   contact.css
+   Part 2 — Responsive Design
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:1000px){
+
+    .contact-section{
+
+        grid-template-columns:
+            1fr;
+
+        gap:55px;
+
+        align-items:stretch;
+
+    }
+
+
+    .contact-info{
+
+        max-width:650px;
+
+        margin:auto;
+
+        text-align:center;
+
+    }
+
+
+    .discord-button{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .contact-note{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .requirements-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width:750px){
+
+    .contact-hero{
+
+        padding-top:155px;
+
+        padding-bottom:65px;
+
+    }
+
+
+    .contact-section{
+
+        width:90%;
+
+        margin-top:25px;
+
+        gap:45px;
+
+    }
+
+
+    .contact-requirements{
+
+        width:90%;
+
+        margin-top:110px;
+
+    }
+
+
+    .contact-faq{
+
+        width:90%;
+
+        margin-top:110px;
+
+    }
+
+
+    .contact-cta{
+
+        width:90%;
+
+        margin-top:110px;
+
+        padding:
+            75px 25px;
+
+    }
+
+
+    .order-process{
+
+        padding:
+            30px 25px;
+
+    }
+
+
+    .order-process::before{
+
+        left:47px;
+
+    }
+
+
+    .order-step{
+
+        grid-template-columns:
+            45px 1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:600px){
+
+    /* ---------------------------------------------
+       Hero
+    --------------------------------------------- */
+
+    .contact-hero{
+
+        width:90%;
+
+        padding-top:130px;
+
+        padding-bottom:50px;
+
+    }
+
+
+    .contact-badge{
+
+        padding:
+            8px 14px;
+
+        font-size:.7rem;
+
+    }
+
+
+    .contact-hero h1{
+
+        font-size:2.55rem;
+
+        letter-spacing:-.035em;
+
+    }
+
+
+    .contact-hero p{
+
+        font-size:.85rem;
+
+        line-height:1.7;
+
+    }
+
+
+    /* ---------------------------------------------
+       Contact Intro
+    --------------------------------------------- */
+
+    .contact-info h2{
+
+        font-size:2.35rem;
+
+    }
+
+
+    .contact-info > p{
+
+        font-size:.83rem;
+
+        line-height:1.75;
+
+    }
+
+
+    /* ---------------------------------------------
+       Discord Button
+    --------------------------------------------- */
+
+    .discord-button{
+
+        padding:
+            15px 16px;
+
+        border-radius:14px;
+
+    }
+
+
+    .discord-button-icon{
+
+        width:42px;
+
+        height:42px;
+
+        border-radius:11px;
+
+    }
+
+
+    .discord-button strong{
+
+        font-size:.84rem;
+
+    }
+
+
+    .contact-note{
+
+        font-size:.68rem !important;
+
+    }
+
+
+    /* ---------------------------------------------
+       Order Process
+    --------------------------------------------- */
+
+    .order-process{
+
+        padding:
+            27px 20px;
+
+        border-radius:20px;
+
+    }
+
+
+    .order-process::before{
+
+        left:42px;
+
+        top:95px;
+
+        bottom:35px;
+
+    }
+
+
+    .order-header{
+
+        margin-bottom:20px;
+
+    }
+
+
+    .order-header h3{
+
+        font-size:1.3rem;
+
+    }
+
+
+    .order-step{
+
+        grid-template-columns:
+            42px 1fr;
+
+        gap:16px;
+
+        padding:
+            15px 0;
+
+    }
+
+
+    .order-step-icon{
+
+        width:42px;
+
+        height:42px;
+
+        border-radius:12px;
+
+    }
+
+
+    .order-step-content{
+
+        padding-right:20px;
+
+    }
+
+
+    .order-step-content h4{
+
+        font-size:.9rem;
+
+    }
+
+
+    .order-step-content p{
+
+        font-size:.74rem;
+
+    }
+
+
+    .order-step-number{
+
+        top:17px;
+
+        font-size:.65rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       Requirements
+    --------------------------------------------- */
+
+    .contact-requirements{
+
+        margin-top:90px;
+
+    }
+
+
+    .section-heading{
+
+        margin-bottom:35px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .section-heading p{
+
+        font-size:.83rem;
+
+    }
+
+
+    .requirements-grid{
+
+        grid-template-columns:
+            1fr;
+
+        gap:10px;
+
+    }
+
+
+    .contact-requirement{
+
+        min-height:auto;
+
+        padding:
+            25px 22px;
+
+    }
+
+
+    .contact-requirement > span{
+
+        margin-bottom:25px;
+
+    }
+
+
+    .contact-requirement h3{
+
+        font-size:.98rem;
+
+    }
+
+
+    .contact-requirement p{
+
+        font-size:.75rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       FAQ
+    --------------------------------------------- */
+
+    .contact-faq{
+
+        margin-top:90px;
+
+    }
+
+
+    .faq-list{
+
+        gap:7px;
+
+    }
+
+
+    .faq-list summary{
+
+        padding:
+            18px 18px;
+
+        font-size:.78rem;
+
+    }
+
+
+    .faq-list details p{
+
+        padding:
+            0 18px 18px;
+
+        font-size:.74rem;
+
+    }
+
+
+    /* ---------------------------------------------
+       CTA
+    --------------------------------------------- */
+
+    .contact-cta{
+
+        margin-top:90px;
+
+        padding:
+            65px 20px;
+
+        border-radius:22px;
+
+    }
+
+
+    .contact-cta h2{
+
+        font-size:2.15rem;
+
+    }
+
+
+    .contact-cta p{
+
+        font-size:.82rem;
+
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width:380px){
+
+    .contact-hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+
+    .contact-info h2{
+
+        font-size:2.1rem;
+
+    }
+
+
+    .order-process{
+
+        padding:
+            24px 17px;
+
+    }
+
+
+    .order-step-content{
+
+        padding-right:10px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:2.05rem;
+
+    }
+
+
+    .contact-cta h2{
+
+        font-size:1.9rem;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .discord-button,
+    .discord-button::before,
+    .discord-button > i,
+    .contact-requirement,
+    .faq-list summary i{
+
+        transition:none;
+
+    }
+
+}

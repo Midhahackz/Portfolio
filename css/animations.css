@@ -1,0 +1,537 @@
+/* =====================================================
+   MidFlow Portfolio
+   animations.css
+===================================================== */
+
+
+/* =====================================================
+   Page Load
+===================================================== */
+
+body{
+
+    animation:
+        pageLoad .8s ease both;
+
+}
+
+@keyframes pageLoad{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* =====================================================
+   Navbar Entrance
+===================================================== */
+
+nav{
+
+    animation:
+        navEnter .8s cubic-bezier(.2,.8,.2,1) both;
+
+    animation-delay:.1s;
+
+}
+
+@keyframes navEnter{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translate(-50%,-25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translate(-50%,0);
+
+    }
+
+}
+
+
+/* =====================================================
+   Hero Badge
+===================================================== */
+
+.badge{
+
+    animation:
+        fadeUpSmall .8s ease both;
+
+    animation-delay:.25s;
+
+}
+
+@keyframes fadeUpSmall{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   Hero Heading
+===================================================== */
+
+.hero h1{
+
+    animation:
+        heroHeading 1s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+    animation-delay:.35s;
+
+}
+
+@keyframes heroHeading{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(30px);
+
+        filter:
+            blur(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+        filter:
+            blur(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   Hero Paragraph
+===================================================== */
+
+.hero p{
+
+    animation:
+        fadeUpSmall .9s ease both;
+
+    animation-delay:.55s;
+
+}
+
+
+/* =====================================================
+   Hero Buttons
+===================================================== */
+
+.hero-buttons{
+
+    animation:
+        fadeUpSmall .9s ease both;
+
+    animation-delay:.7s;
+
+}
+
+
+/* =====================================================
+   Hero Thumbnail Showcase
+===================================================== */
+
+.hero-right{
+
+    animation:
+        heroShowcase 1.2s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+    animation-delay:.4s;
+
+}
+
+@keyframes heroShowcase{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateX(50px)
+            scale(.94);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateX(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+   Thumbnail Hover Shine
+===================================================== */
+
+.thumb{
+
+    isolation:isolate;
+
+}
+
+.thumb::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    background:
+        linear-gradient(
+            115deg,
+            transparent 30%,
+            rgba(255,255,255,.12) 48%,
+            transparent 65%
+        );
+
+    transform:
+        translateX(-120%);
+
+    transition:
+        transform .7s ease;
+
+}
+
+.thumb:hover::after{
+
+    transform:
+        translateX(120%);
+
+}
+
+
+/* =====================================================
+   Buttons Shine
+===================================================== */
+
+.primary,
+.hire-btn,
+.cta > a{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.primary::before,
+.hire-btn::before,
+.cta > a::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.22),
+            transparent
+        );
+
+    transform:
+        skewX(-20deg);
+
+    transition:
+        left .7s ease;
+
+}
+
+.primary:hover::before,
+.hire-btn:hover::before,
+.cta > a:hover::before{
+
+    left:140%;
+
+}
+
+
+/* =====================================================
+   Stats Reveal
+===================================================== */
+
+.stat{
+
+    animation:
+        statReveal .8s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+}
+
+.stat:nth-child(1){
+
+    animation-delay:.1s;
+
+}
+
+.stat:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.stat:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+.stat:nth-child(4){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes statReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   Service Cards
+===================================================== */
+
+.card{
+
+    animation:
+        cardReveal .8s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+}
+
+.card:nth-child(1){
+
+    animation-delay:.1s;
+
+}
+
+.card:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+.card:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+.card:nth-child(4){
+
+    animation-delay:.4s;
+
+}
+
+@keyframes cardReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(35px)
+            scale(.97);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+   Before / After
+===================================================== */
+
+.comparison{
+
+    animation:
+        comparisonReveal 1s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+}
+
+@keyframes comparisonReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(40px)
+            scale(.97);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta{
+
+    animation:
+        ctaReveal 1s
+        cubic-bezier(.2,.8,.2,1)
+        both;
+
+}
+
+@keyframes ctaReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   Reduced Motion
+   Accessibility
+===================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:.01ms !important;
+
+        animation-iteration-count:1 !important;
+
+        transition-duration:.01ms !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
