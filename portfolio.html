@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Portfolio | MidFlow</title>
+
+    <meta
+        name="description"
+        content="Explore MidFlow's Minecraft thumbnails, creator designs, and visual projects."
+    >
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Portfolio CSS -->
+
+    <link rel="stylesheet" href="css/portfolio.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Background -->
+
+    <div class="gradient-bg"></div>
+
+    <div class="noise"></div>
+
+    <!-- =================================================
+        NAVBAR
+    ================================================== -->
+
+    <nav>
+
+        <!-- Logo -->
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <span>M</span> MidFlow
+
+        </a>
+
+
+        <!-- Desktop Navigation -->
+
+        <ul class="desktop-nav">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- Desktop CTA -->
+
+        <a
+            href="contact.html"
+            class="hire-btn"
+        >
+            Work With Me
+        </a>
+
+
+        <!-- Mobile Menu Button -->
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </nav>
+
+
+    <!-- =================================================
+        MOBILE NAVIGATION
+    ================================================== -->
+
+    <div
+        class="mobile-nav"
+        id="mobileNav"
+    >
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="portfolio.html">
+            Portfolio
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+
+        <a
+            href="contact.html"
+            class="mobile-nav-cta"
+        >
+
+            Work With Me
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+
+    <!-- =================================================
+         PORTFOLIO HERO
+    ================================================== -->
+
+    <main>
+
+
+        <section class="portfolio-hero">
+
+            <span class="portfolio-badge">
+
+                My Work
+
+            </span>
+
+
+            <h1>
+
+                Designs Built To
+                <span>Get Attention.</span>
+
+            </h1>
+
+
+            <p>
+
+                A collection of Minecraft thumbnails,
+                creator visuals and experiments designed
+                with clarity, curiosity and clicks in mind.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FILTERS
+        ================================================== -->
+
+        <section class="portfolio-section">
+
+            <div class="portfolio-filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="minecraft"
+                >
+                    Minecraft
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="survival"
+                >
+                    Survival
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="pvp"
+                >
+                    PvP
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="mods"
+                >
+                    Mods
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="events"
+                >
+                    Events
+                </button>
+
+
+                <button
+                    class="filter-btn"
+                    data-filter="branding"
+                >
+                    Branding
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FEATURED PROJECT
+            ================================================== -->
+
+            <article
+                class="featured-project"
+                data-category="minecraft"
+            >
+
+                <div class="featured-image">
+
+                    <img
+                        src="assets/thumbnails/featured.jpg"
+                        alt="Featured Minecraft thumbnail"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="featured-content">
+
+                    <span>
+                        Featured Project
+                    </span>
+
+
+                    <h2>
+                        Designed Around
+                        The Click.
+                    </h2>
+
+
+                    <p>
+
+                        A Minecraft thumbnail created
+                        around a clear focal point,
+                        controlled contrast and curiosity.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="project-link"
+                    >
+
+                        View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PORTFOLIO GRID
+            ================================================== -->
+
+            <div class="portfolio-grid">
+
+
+
+                <!-- PROJECT 01 -->
+
+                <article
+                    class="portfolio-item large"
+                    data-category="minecraft"
+                >
+
+                    <div class="portfolio-image">
+
+                        <img
+                            src="assets/thumbnails/thumb1.jpg"
+                            alt="Minecraft thumbnail design"
+                            loading="lazy"
+                        >
+
+                        <div class="portfolio-overlay">
+
+                            <span>
+                                Minecraft
+                            </span>
+
+                            <h3>
+                                Project One
+                            </h3>
+
+                            <button
+                                class="view-project"
+                            >
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 02 -->
+
+                <article
+                    class="portfolio-item"
+                    data-category="survival"
+                >
+
+                    <div class="portfolio-image">
+
+                        <img
+                            src="assets/thumbnails/thumb2.jpg"
+                            alt="Minecraft survival thumbnail"
+                            loading="lazy"
+                        >
+
+                        <div class="portfolio-overlay">
+
+                            <span>
+                                Survival
+                            </span>
+
+                            <h3>
+                                Project Two
+                            </h3>
+
+                            <button
+                                class="view-project"
+                            >
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 03 -->
+
+                <article
+                    class="portfolio-item"
+                    data-category="pvp"
+                >
+
+                    <div class="portfolio-image">
+
+                        <img
+                            src="assets/thumbnails/thumb3.jpg"
+                            alt="Minecraft PvP thumbnail"
+                            loading="lazy"
+                        >
+
+                        <div class="portfolio-overlay">
+
+                            <span>
+                                PvP
+                            </span>
+
+                            <h3>
+                                Project Three
+                            </h3>
+
+                            <button
+                                class="view-project"
+                            >
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 04 -->
+
+                <article
+                    class="portfolio-item"
+                    data-category="mods"
+                >
+
+                    <div class="portfolio-image">
+
+                        <img
+                            src="assets/thumbnails/thumb4.jpg"
+                            alt="Minecraft mod thumbnail"
+                            loading="lazy"
+                        >
+
+                        <div class="portfolio-overlay">
+
+                            <span>
+                                Mods
+                            </span>
+
+                            <h3>
+                                Project Four
+                            </h3>
+
+                            <button
+                                class="view-project"
+                            >
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 05 -->
+
+                <article
+                    class="portfolio-item"
+                    data-category="events"
+                >
+
+                    <div class="portfolio-image">
+
+                        <img
+                            src="assets/thumbnails/thumb5.jpg"
+                            alt="Minecraft event design"
+                            loading="lazy"
+                        >
+
+                        <div class="portfolio-overlay">
+
+                            <span>
+                                Events
+                            </span>
+
+                            <h3>
+                                Project Five
+                            </h3>
+
+                            <button
+                                class="view-project"
+                            >
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 06 -->
+
+                <article
+                    class="portfolio-item large"
+                    data-category="branding"
+                >
+
+                    <div class="portfolio-image">
+
+                        <img
+                            src="assets/thumbnails/thumb6.jpg"
+                            alt="Minecraft creator branding"
+                            loading="lazy"
+                        >
+
+                        <div class="portfolio-overlay">
+
+                            <span>
+                                Branding
+                            </span>
+
+                            <h3>
+                                Project Six
+                            </h3>
+
+                            <button
+                                class="view-project"
+                            >
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 07 -->
+
+                <article
+                    class="portfolio-item"
+                    data-category="minecraft"
+                >
+
+                    <div class="portfolio-image">
+
+                        <img
+                            src="assets/thumbnails/thumb7.jpg"
+                            alt="Minecraft thumbnail"
+                            loading="lazy"
+                        >
+
+                        <div class="portfolio-overlay">
+
+                            <span>
+                                Minecraft
+                            </span>
+
+                            <h3>
+                                Project Seven
+                            </h3>
+
+                            <button
+                                class="view-project"
+                            >
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 08 -->
+
+                <article
+                    class="portfolio-item"
+                    data-category="survival"
+                >
+
+                    <div class="portfolio-image">
+
+                        <img
+                            src="assets/thumbnails/thumb8.jpg"
+                            alt="Minecraft survival thumbnail"
+                            loading="lazy"
+                        >
+
+                        <div class="portfolio-overlay">
+
+                            <span>
+                                Survival
+                            </span>
+
+                            <h3>
+                                Project Eight
+                            </h3>
+
+                            <button
+                                class="view-project"
+                            >
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BEFORE / AFTER
+            ================================================== -->
+
+            <section class="portfolio-before-after">
+
+                <div class="before-after-heading">
+
+                    <span>
+                        Design Process
+                    </span>
+
+                    <h2>
+                        From Good
+                        <span>To Better.</span>
+                    </h2>
+
+                    <p>
+
+                        See how small changes in composition,
+                        lighting and hierarchy can completely
+                        change a thumbnail.
+
+                    </p>
+
+                </div>
+
+
+                <div class="portfolio-comparison">
+
+                    <img
+                        src="assets/before-after/before.jpg"
+                        alt="Original thumbnail"
+                    >
+
+                    <div class="after-image">
+
+                        <img
+                            src="assets/before-after/after.jpg"
+                            alt="Improved thumbnail"
+                        >
+
+                    </div>
+
+
+                    <div class="comparison-line">
+
+                        <div class="comparison-handle">
+
+                            <i class="fa-solid fa-arrows-left-right"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="comparison-label before-label">
+                        BEFORE
+                    </span>
+
+                    <span class="comparison-label after-label">
+                        AFTER
+                    </span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CTA
+            ================================================== -->
+
+            <section class="portfolio-cta">
+
+                <span>
+                    Have a video in mind?
+                </span>
+
+
+                <h2>
+
+                    Let's Make Something
+                    <span>Worth Clicking.</span>
+
+                </h2>
+
+
+                <p>
+
+                    Tell me your idea and let's turn
+                    it into a thumbnail that stands out.
+
+                </p>
+
+
+                <a
+                    href="contact.html"
+                    class="primary"
+                >
+
+                    Start a Project
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        © 2026 MidFlow.
+        Designed for Minecraft creators.
+
+    </footer>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
