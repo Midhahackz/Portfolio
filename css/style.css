@@ -907,22 +907,24 @@ section{
     object-fit:cover;
 
 }
-
 .comparison img:first-child{
 
-    filter:
-        brightness(.75)
-        saturate(.75);
-
-}
-
-.comparison img:last-child{
+    /* Before image stays on the left */
 
     clip-path:
         inset(0 50% 0 0);
 
 }
 
+
+.comparison img:last-child{
+
+    /* After image stays on the right */
+
+    clip-path:
+        inset(0 0 0 50%);
+
+}
 
 /* Divider */
 
