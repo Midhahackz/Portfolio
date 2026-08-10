@@ -844,12 +844,7 @@
     z-index:2;
 
 }
-
-/*
-   Important:
-   The image inside the wrapper must stay
-   the same width as the full comparison.
-*/
+/* Image stays the full comparison width */
 
 .after-image img{
 
@@ -857,7 +852,7 @@
 
     top:0;
 
-    left:0;
+    right:0;
 
     width:1000px;
 
@@ -868,7 +863,6 @@
     object-fit:cover;
 
 }
-
 
 /* =====================================================
    Comparison Divider
